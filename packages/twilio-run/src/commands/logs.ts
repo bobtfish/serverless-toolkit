@@ -68,6 +68,7 @@ export async function handler(
     if (flags.tail) {
       const stream = await client.getLogsStream({ ...config });
       stream.on('data', (log: LogApiResource) => {
+        console.log("GOT STREAM DATA");
         printLog(log, config.outputFormat);
       });
     } else {
