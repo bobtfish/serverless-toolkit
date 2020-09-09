@@ -1,5 +1,6 @@
 {
   "name": "@twilio-labs/serverless-toolkit",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap --no-ci",
